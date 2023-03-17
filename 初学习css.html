@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            color: blue;
+            font-size: 30px; /*字号*/
+            font-weight: 700; /*粗细 400正常，700粗*/
+            font-style: italic; /*倾斜*/
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;/*sans-serif 无衬线 serif 有衬线 con 等宽*/
+           background-color: aquamarine;
+           margin:0 auto;
+        }
+        /* div{
+            font: italic 700 19px 宋体;/*复合属性可以省略倾斜和粗细
+            text-decoration: underline;下划线
+        }*/
+        /* .one{
+            color: darkmagenta;
+        }
+        #ll {
+            color: darkgreen;
+        } */
+        .b{
+             text-indent: 2em;/*em是一个子的大小浏览器默认16px*/
+        }
+        h1{
+            text-align: center;
+        }
+        h2{
+            text-align: left;
+        }
+        h3{
+            text-align: right;
+        }
+        /* body{
+            text-align: center;
+        } */
+        a{
+            text-decoration: none;/*无*/
+        }
+        h3{
+            text-decoration: line-through;/*删除线*/
+        }
+        h4{
+            text-decoration: overline;/*上划线*/
+        }
+         div{
+            line-height: 2;/*行高*/
+            width: 500px;
+            height: 500px;
+            background-color: pink;
+            background-image: url();
+            background-repeat: no-repeat;/*x,y no*/
+            background-position: center bottom;
+            background-position: 50px 100;
+            background:pink url() no-repeat center;
+        } 
+        div a{
+        color: aqua;/*后代*/
+        }
+        div>a{
+            color: burlywood;/*子代*/
+        }
+        p,div,span{
+            color: aqua;/*并集*/
+        }
+        p.b{
+            color: beige;/*同时是p标签也是b类*/
+        }
+        a:hover{
+            color:black;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div class="">css使用方法有三种 1.head中 写style 标签名{}   2.css写在单独文件里，link标签引入  3.直接写在标签里加style标签写</div> -->
+    <!-- 类选择器四种 -->
+    <!-- 1.标签选择器 标签名加{} -->
+    <!-- 2.类选择器 .+类名{} 类名为class中的内容-->
+    <!-- 3.id选择器 #+id名{} -->
+    <!-- 4.通配符 选中所有标签 *{} -->
+    <div class="one"> 222</div>
+    <div id="ll">333</div>
+    <!-- 文字基本样式 -->
+    <p>555fff</p>
+    <div>倾斜 粗细 字号 风格</div>
+    <!-- 文本缩进 -->
+    <div class="b">法定股本VS进出口v会根据是的发布会v撒觉得v部分v速率雷松啊欸哦你的身份v耐腐蚀v举报v附件是的v色聚白色的v就算了吧v发布时间可爱看倒是方便v回家了绿啊serves撒VS日本是否代表个人你是贴吧v发</div>
+    <!-- 水平对齐 -->
+    <h1>啦啦啦</h1>
+    <h2>bbb吧</h2>
+    <h3>hhhh</h3>
+    <img src="./屏幕截图(1).png" alt="" width="100"> 
+<!-- 文本修饰 -->
+<div>嘎嘎嘎</div>
+<h3>来来来</h3>
+<h4>mmm</h4>
+<a href="#">变变变</a>
+<!-- 行高 -->
+<div>fgekfaewlhgvweqak十九点v刚卡了的。包括v老师东方航空v比较凉快的。v啊杀杀杀是肥肉素未封闭噶速率按类别率和表空间哇嘎人类1格发完了恢复期股v啊回购股份奥利弗哈维切尔卡奇</div>
+<!-- 标签水平居中 margin:0 auto-->
+<!-- 后代选择器 -->
+<div>
+    <p>例如 div后加 p{}</p>
+</div>
+<!-- 子代选择器 -->
+<div>
+    <a href="#"></a>
+    <p>
+        <a href="#"></a>
+    </p>
+</div>
+<!-- 并集选择器 -->
+<!-- 交集选择器 -->
+<!-- 伪类选择器 -->
+<a href="#">悬停时字体欧颜色</a>
+<!-- 背景图片54 -->
+<div>background-image</div>
+<!-- 背景平铺58 bgr-->
+<!-- 背景位置bgp bottme下 top上-->
+<!-- 背景复合属性 backgroud（gd） -->
+<!-- 块 一行一个标签-->
+<div>111</div>
+<p>块标签有第div p h </p>
+<!-- 行内 一行多个 -->
+<div>例如a span 不可以设置宽高</div>
+<!-- 行内块 -->
+<div>可以显示在一行可以加宽高 例如 input img textarea</div>
+<!-- 显示模式转换 -->
+<div>display :block 转块</div>
+<div>display : inline block 转行内块</div>
+<div>display : inline转行内</div>
+<!-- 继承 文字可以继承 -->
+<div>
+    发给肌肤大家看法
+    <span>黑i非常感慨回来</span>
+    <!-- 设置div标签，span也会随之改变 -->
+</div>
+<!-- 层叠性 -->
+<div>当选择器优先级相同时后面覆盖前面</div>
+<!-- 提升优先级最高！important -->
+<!-- 权重叠加 -->
+复合选择器 行内 id 类 逐个比较谁先多谁优先
+</body>
+</html>
